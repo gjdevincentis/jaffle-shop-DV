@@ -14,7 +14,7 @@ profile: 'jaffle_shop_dv'
 model-paths: ["models"]
 analysis-paths: ["analyses"]
 test-paths: ["tests"]
-seed-paths: ["seeds", "jaffle-data"]
+seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
@@ -34,3 +34,6 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
+seeds:
+  jaffle_shop_DV:
+    +schema: load
