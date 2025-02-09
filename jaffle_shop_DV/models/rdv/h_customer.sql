@@ -4,7 +4,15 @@
 hashkey: 'hk_customer_h'
 business_keys: 
     - customer_id
-source_models: stg_customers
+source_models: 
+    - name: stg_customers
+      hk_column: 'hk_customer_h'
+      rscs_static: 'raw_customers' 
+    
+    - name: stg_orders
+      hk_column: 'hk_customer_h'
+      rscs_static: 'raw_orders'
+
 {%- endset -%}
 
 {%- set metadata_dict = fromyaml(yaml_metadata) -%}
