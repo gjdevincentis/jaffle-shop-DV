@@ -3,7 +3,7 @@
 {%- set yaml_metadata -%}
 hashkey: 'hk_customer_h'
 business_keys: 
-    - id
+    - customer_id
 source_models: stg_customers
 {%- endset -%}
 
