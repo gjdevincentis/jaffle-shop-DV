@@ -34,6 +34,8 @@ models:
     # Config indicated by + and applies to all files under models/example/
     staging:
       +schema: load
+    rdv:
+      +schema: rdv
 seeds:
   jaffle_shop_DV:
     +schema: load
